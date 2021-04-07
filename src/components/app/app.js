@@ -1,6 +1,7 @@
-import logo from './logo.svg';
-import fox from './images/fox.svg';
-import './App.css';
+// import fox from './images/fox.svg';
+import Header from '../header';
+import ItemList from '../itemList';
+import './app.css';
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <img src={fox} className="App-logo" alt="logo" />
-      <h1>l;kjasdf</h1>
+      {/* <img src={fox} className="App-logo" alt="logo" /> */}
+      <Header/>
+      <ItemList/>
     </div>
   );
 }
