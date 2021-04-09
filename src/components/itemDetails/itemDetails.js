@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ItemDetails = ({name, age, phoneNumber}) => {
+const ItemDetails = ({name, age, phone, id}) => {
     return (
-        <div>
-            <div>{name}</div>
-            <div>{age}</div>
-            <div>{phoneNumber}</div>
+        <div key={id} id={id} className='item'>
+            <div className='item-name'>{name}</div>
+            <div className='item-age'>{age}</div>
+            <div className='item-phone'>{phone}</div>
         </div>
     )
 }

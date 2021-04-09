@@ -1,5 +1,5 @@
 body {
-    width: 960px;
+    width: 700px;
     margin: 50px auto;
     text-align: center;
     background-color: rgb(75, 135, 153);
@@ -7,10 +7,60 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .sort, .view {
-    background-color: #000;
-    height: auto;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.view {
+    width: 270px;
+}
+
+.view button {
+    width: 50%;
+}
+
+.sort {
+    flex-direction: column;
+    width: 375px;    
+}
+
+.top-sort {
+    text-align: center;
+    width: 33%;
+    height: 27px;
+}
+
+.bot-sort {
+    width: 50%;
+    height: 27px;
+}
+
+.item {
+    margin: auto;
+    padding: 20px 10px;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    background-color: rgb(169, 200, 206);
+    box-sizing: border-box;
+}
+
+.item-name {
+    width: 40%;
+    text-align: start;
+}
+/* .itemAge {
+
+} */
+
+.item-phone {
+    width: 40%;
+    text-align: end;
 }
