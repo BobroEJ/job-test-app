@@ -8,10 +8,18 @@ export default class ItemList extends Component {
         data: []
     }
 
+
+
     getData = async () => {
         let res = await fetch('./data.json')
             .then(res => res.json())
         return res
+    }
+
+    componentDidMount() {
+        this.getData().then(data => {
+            this.setState({data})
+        })
     }
     
     
@@ -23,10 +31,7 @@ export default class ItemList extends Component {
         }))
     }
 
-    render() {
-        this.getData().then(data => {
-            this.setState({data})
-        })
+    render() {        
         return (
             this.renderItems(this.state.data)
         )
